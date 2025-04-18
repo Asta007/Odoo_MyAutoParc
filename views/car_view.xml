@@ -46,5 +46,11 @@
                 </form>
             </field>
         </record>
+        <record model="ir.actions.act_window" id="action_myautoparc_car">
+            <field name="name">Cars List</field>
+            <field name="res_model">myautoparc.car</field>
+            <field name="view_mode">list,form</field>
+            <field name="view_id" ref="myautoparc_car_view_list"/>
+       </record>
     </data>
 </odoo>
