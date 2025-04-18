@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="myautoparc_model_view_list" model="ir.ui.view">
+            <field name="name">myautoparc.model.view.list</field>
+            <field name="model">myautoparc.model</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="brand_id"/>
+                    <field name="body"/>
+                    <field name="power"/>
+                    <field name="consumption"/>
+                </list>
+            </field>
+        </record>
+        <record id="myautoparc_model_view_form" model="ir.ui.view">
+            <field name="name">myautoparc.model.view.form</field>
+            <field name="model">myautoparc.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="brand_id"/>
+                            <field name="body"/>
+                            <field name="power"/>
+                            <field name="consumption"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

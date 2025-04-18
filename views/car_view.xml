@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="myautoparc_car_view_list" model="ir.ui.view">
+            <field name="name">myautoparc.car.view.list</field>
+            <field name="model">myautoparc.car</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="serial_number"/>
+                    <field name="name"/>
+                    <field name="model_id"/>
+                    <field name="state"/>
+                    <field name="release_date"/>
+                    <field name="colors"/>
+                </list>
+            </field>
+        </record>
+        <record id="myautoparc_car_view_form" model="ir.ui.view">
+            <field name="name">myautoparc.car.view.form</field>
+            <field name="model">myautoparc.car</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="serial_number"/>
+                                <field name="colors"/>
+                                <field name="release_date"/>
+                                <field name="meter"/>
+                            </group>
+                            <group>
+                                <field name="state"/>
+                                <field name="lastcare"/>
+                                <field name="brand_id"/>
+                                <field name="model_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="documents" string="Related documents">
+                                <field name="document_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
