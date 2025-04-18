@@ -14,9 +14,29 @@
 
         <menuitem
         id="myautoparc_car_menu"
+        name="Clients"
+        parent="myautoparc_sub_menu_conf"
+        action="action_myautoparc_client"/>
+
+        <menuitem
+        id="myautoparc_car_menu"
+        name="Models"
+        parent="myautoparc_sub_menu_conf"
+        action="action_myautoparc_model"/>
+
+        <menuitem
+        id="myautoparc_car_menu"
+        name="Brands"
+        parent="myautoparc_sub_menu_conf"
+        action=""/>
+
+        <menuitem
+        id="myautoparc_car_menu"
         name="Cars"
         parent="myautoparc_sub_menu_conf"
-        action="action_myautoparc_car"/>
+        action="action_myautoparc_brand"/>
+
+        
 
     </data>
 </odoo>
