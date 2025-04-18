@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_myautoparc_car_admin,myautoparc.car,model_myautoparc_car,base.group_system,1,1,1,1
+access_myautoparc_client_admin,myautoparc.client,model_myautoparc_client,base.group_system,1,1,1,1
+access_myautoparc_model_admin,myautoparc.model,model_myautoparc_model,base.group_system,1,1,1,1
+access_myautoparc_brand_admin,myautoparc.brand,model_myautoparc_brand,base.group_system,1,1,1,1

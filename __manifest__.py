@@ -8,10 +8,12 @@
     'category' : 'ISI_ERP',
     'depends' : ['base'],
     'data' : [
+        "security/ir.model.access.csv",
         "views/client_view.xml",
         "views/model_view.xml",
         "views/brand_view.xml",
-        "views/car_view.xml"
+        "views/car_view.xml",
+        "views/menu.xml"
     ],
     'installable' : True,
     'application' : True,
