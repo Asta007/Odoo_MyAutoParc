@@ -7,3 +7,4 @@ from . import employe
 from . import graycard
 from . import maintenance
 from . import car
+from . import employe

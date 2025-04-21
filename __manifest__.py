@@ -17,6 +17,7 @@
         "views/contract_view.xml",
         "views/graycard_view.xml",
         "views/maintenance_view.xml",
+        "views/employe_view.xml",
         "views/menu.xml"
     ],
     'installable' : True,

@@ -12,6 +12,8 @@
                     <field name="state"/>
                     <field name="release_date"/>
                     <field name="colors"/>
+                    <field name="graycard_id"/>
+                    <field name="assurance_id"/>
                 </list>
             </field>
         </record>
@@ -29,12 +31,14 @@
                                 <field name="colors"/>
                                 <field name="release_date"/>
                                 <field name="meter"/>
+                                <field name="state"/>
                             </group>
                             <group>
-                                <field name="state"/>
                                 <field name="lastcare"/>
                                 <field name="brand_id"/>
                                 <field name="model_id"/>
+                                <field name="graycard_id"/>
+                                <field name="assurance_id"/>
                             </group>
                         </group>
                         <notebook>
