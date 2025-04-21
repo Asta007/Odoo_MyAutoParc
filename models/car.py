@@ -24,3 +24,5 @@ class Car(models.Model) :
     image = fields.Binary(string="photo")
     document_ids = fields.Many2many('ir.attachment', 'attachment_100', 'attachment_id', string="Documents")
     model_id = fields.Many2one('myautoparc.model',string="Assaciated Model", required=True)
+    graycard_id = fields.Many2one('myautoparc.graycard',string="Gray Card", required=True)
+    assurance_id = fields.Many2one('myautoparc.assurance',string="Gray Card", required=True)
