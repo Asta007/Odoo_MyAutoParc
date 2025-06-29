@@ -3,3 +3,7 @@ from . import model
 from . import brand
 from . import car
 from . import center
+from . import affectation
+from . import fuel
+from . import maintenance
+from . import document

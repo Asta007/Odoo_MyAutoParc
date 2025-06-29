@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_document_list" model="ir.ui.view">
+        <field name="name">myautoparc.document.list</field>
+        <field name="model">myautoparc.document</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="car_id"/>
+                <field name="type_document"/>
+                <field name="date_expiration"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_document_form" model="ir.ui.view">
+        <field name="name">myautoparc.document.form</field>
+        <field name="model">myautoparc.document</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="car_id"/>
+                        <field name="type_document"/>
+                        <field name="date_expiration"/>
+                        <field name="files" filename="file_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_document" model="ir.actions.act_window">
+        <field name="name">Documents</field>
+        <field name="res_model">myautoparc.document</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="myautoparc_document_menu"
+              name="Documents"
+              parent="myautoparc_sub_menu_conf"
+              action="action_document"
+              sequence="9"/>
+</odoo>

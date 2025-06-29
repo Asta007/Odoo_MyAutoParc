@@ -24,5 +24,17 @@
         
         <!-- Affectation -->
         <menuitem id="myautoparc_affectation_menu" name="Affectations" parent="myautoparc_sub_menu_conf" action="action_affectation" sequence="6"/>
+
+        <!-- Fuel -->
+        <menuitem id="myautoparc_fuel_menu" name="Fuels" parent="myautoparc_sub_menu_conf" action="action_fuel" sequence="7"/>
+
+        <!-- Maintenance -->
+        <menuitem id="myautoparc_document_menu" name="Documents" parent="myautoparc_sub_menu_conf" action="action_document" sequence="8"/>
+
+        <!-- Document -->
+        <menuitem id="myautoparc_maintenance_menu" name="Maintenances" parent="myautoparc_sub_menu_conf" action="action_maintenance" sequence="9"/>
+
+
+
     </data>
 </odoo>
