@@ -14,7 +14,10 @@
         "views/brand_views.xml",
         "views/car_views.xml",
         "views/center_views.xml",
-        "views/center_views.xml",
+        "views/affectation_views.xml",
+        "views/fuel_views.xml",
+        "views/maintenance_views.xml",
+        "views/document_views.xml",
         "views/menu.xml"
     ],
     'installable' : True,
