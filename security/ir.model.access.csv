@@ -3,8 +3,3 @@ access_myautoparc_car_admin,myautoparc.car,model_myautoparc_car,base.group_syste
 access_myautoparc_client_admin,myautoparc.client,model_myautoparc_client,base.group_system,1,1,1,1
 access_myautoparc_model_admin,myautoparc.model,model_myautoparc_model,base.group_system,1,1,1,1
 access_myautoparc_brand_admin,myautoparc.brand,model_myautoparc_brand,base.group_system,1,1,1,1
-access_myautoparc_assurance_admin,myautoparc.assurance,model_myautoparc_assurance,base.group_system,1,1,1,1
-access_myautoparc_contract_admin,myautoparc.contract,model_myautoparc_contract,base.group_system,1,1,1,1
-access_myautoparc_employe_admin,myautoparc.employe,model_myautoparc_employe,base.group_system,1,1,1,1
-access_myautoparc_graycard_admin,myautoparc.graycard,model_myautoparc_graycard,base.group_system,1,1,1,1
-access_myautoparc_maintenance_admin,myautoparc.maintenance,model_myautoparc_maintenance,base.group_system,1,1,1,1

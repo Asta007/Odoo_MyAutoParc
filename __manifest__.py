@@ -9,16 +9,11 @@
     'depends' : ['base'],
     'data' : [
         "security/ir.model.access.csv",
-        "views/client_view.xml",
-        "views/model_view.xml",
-        "views/brand_view.xml",
-        "views/car_view.xml",
-        "views/assurance_view.xml",
-        "views/contract_view.xml",
-        "views/graycard_view.xml",
-        "views/maintenance_view.xml",
-        "views/employe_view.xml",
-        "views/menu.xml"
+        #"views/client_view.xml",
+        #"views/model_view.xml",
+        #"views/brand_view.xml",
+        #"views/car_view.xml",
+        #"views/menu.xml"
     ],
     'installable' : True,
     'application' : True,

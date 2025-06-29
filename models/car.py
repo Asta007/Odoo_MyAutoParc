@@ -4,25 +4,11 @@ class Car(models.Model) :
     _name = 'myautoparc.car'
     _description = "myautoparc car object"
 
-    name = fields.Char(string="CarName",required=True)
-    serial_number = fields.Char(string="Serial number",required=True)
-    colors = fields.Selection([
-        ('black',"Black"),
-        ('yellow',"yellow"),
-        ('grey',"Grey"),
-        ('red',"Red")],
-        string="Car color",default='black')
-    release_date = fields.Date(string="Release Date",required=True)
-    meter = fields.Char(string="Meter")
-    state = fields.Selection ([
-        ('new',"New"),
-        ('out',"Out of Service"),
-        ('on',"On Service")],
-        string="Car State")
-    lastcare = fields.Date(string="Last care date")
+    immatriculation = fields.Char(required=True)
+    numero_chassis = fields.Char()
+    date_acquisition = fields.Date()
+    type_vehicule = fields.Selection([('voiture', 'Voiture'), ('utilitaire', 'Utilitaire'), ('moto', 'Moto'), ('camion', 'Camion')])
+    statut = fields.Selection([('service', 'En service'), ('maintenance', 'En maintenance'), ('vendu', 'Vendu')])
     brand_id = fields.Many2one('myautoparc.brand',string="Car brand")
-    image = fields.Binary(string="photo")
-    document_ids = fields.Many2many('ir.attachment', 'attachment_100', 'attachment_id', string="Documents")
     model_id = fields.Many2one('myautoparc.model',string="Assaciated Model", required=True)
-    graycard_id = fields.Many2one('myautoparc.graycard',string="Gray Card", required=True)
-    assurance_id = fields.Many2one('myautoparc.assurance',string="Gray Card", required=True)
+    #center_id = fields.Many2one('myautoparc.center',string="Assaciated Center", required=True)
