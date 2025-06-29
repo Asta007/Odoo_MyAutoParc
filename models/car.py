@@ -11,4 +11,4 @@ class Car(models.Model) :
     statut = fields.Selection([('service', 'En service'), ('maintenance', 'En maintenance'), ('vendu', 'Vendu')])
     brand_id = fields.Many2one('myautoparc.brand',string="Car brand")
     model_id = fields.Many2one('myautoparc.model',string="Assaciated Model", required=True)
-    #center_id = fields.Many2one('myautoparc.center',string="Assaciated Center", required=True)
+    center_id = fields.Many2one('myautoparc.center',string="Assaciated Center", required=True)

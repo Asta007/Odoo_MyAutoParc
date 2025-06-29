@@ -7,3 +7,4 @@ from . import affectation
 from . import fuel
 from . import maintenance
 from . import document
+from . import employee

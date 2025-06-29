@@ -1,0 +1,11 @@
+<odoo>
+  <record id="action_report_dashboard" model="ir.actions.report">
+    <field name="name">Report</field>
+    <field name="model">myautoparc.car</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">myautoparc.report_dashboard_template</field>
+    <field name="report_file">myautoparc.report_dashboard_template</field>
+    <!-- <field name="binding_model_id" ref="myautoparc.model_myautoparc_car"/> -->
+    <field name="binding_type">report</field>
+  </record>
+</odoo>

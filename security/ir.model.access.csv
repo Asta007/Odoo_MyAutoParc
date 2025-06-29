@@ -8,3 +8,4 @@ access_myautoparc_affectation_admin,myautoparc.affectation,model_myautoparc_affe
 access_myautoparc_fuel_admin,myautoparc.fuel,model_myautoparc_fuel,base.group_system,1,1,1,1
 access_myautoparc_maintenance_admin,myautoparc.maintenance,model_myautoparc_maintenance,base.group_system,1,1,1,1
 access_myautoparc_document_admin,myautoparc.document,model_myautoparc_document,base.group_system,1,1,1,1
+access_myautoparc_employee_admin,myautoparc.employee,model_myautoparc_employee,base.group_system,1,1,1,1

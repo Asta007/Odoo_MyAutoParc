@@ -33,6 +33,9 @@
 
         <!-- Document -->
         <menuitem id="myautoparc_maintenance_menu" name="Maintenances" parent="myautoparc_sub_menu_conf" action="action_maintenance" sequence="9"/>
+        
+        <!-- Employee -->
+        <menuitem id="myautoparc_employee_menu" name="Employees" parent="myautoparc_sub_menu_conf" action="action_employee" sequence="10"/>
 
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="report_dashboard_template">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="doc">
+        <div class="page">
+          <h2>Rapport d'utilisation - <t t-esc="doc.immatriculation"/></h2>
+          <p><strong>Kilométrage total :</strong> <t t-esc="doc.total_km"/> km</p>
+          <p><strong>Coût d’entretien :</strong> <t t-esc="doc.total_maintenance_cost"/> €</p>
+          <p><strong>Carburant consommé :</strong> <t t-esc="doc.fuel_consumed_liters"/> L</p>
+          <p><strong>Coût carburant :</strong> <t t-esc="doc.fuel_cost"/> €</p>
+          <p><strong>Coût total :</strong> <t t-esc="doc.total_cost"/> €</p>
+        </div>
+      </t>
+    </t>
+  </template>
+</odoo>

@@ -9,6 +9,8 @@
     'depends' : ['base'],
     'data' : [
         "security/ir.model.access.csv",
+        "views/report/report_dashboard_template.xml",
+        "views/report/report.xml",
         "views/client_views.xml",
         "views/model_views.xml",
         "views/brand_views.xml",
@@ -18,6 +20,7 @@
         "views/fuel_views.xml",
         "views/maintenance_views.xml",
         "views/document_views.xml",
+        "views/employee_views.xml",
         "views/menu.xml"
     ],
     'installable' : True,

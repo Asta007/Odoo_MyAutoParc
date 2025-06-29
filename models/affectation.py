@@ -5,7 +5,6 @@ class Affectation(models.Model) :
     _description = "myautoparc affectation object"
 
     car_id = fields.Many2one('myautoparc.car',string="Car")
-    #employee_id = fields.Many2one('hr.employee')
-    employee_name = fields.Char(string="Employee Name",required=True)
+    employee_id = fields.Many2one('myautoparc.employee',string="Employee")
     start_date = fields.Date()
     end_date = fields.Date()
