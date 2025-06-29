@@ -3,3 +3,5 @@ access_myautoparc_car_admin,myautoparc.car,model_myautoparc_car,base.group_syste
 access_myautoparc_client_admin,myautoparc.client,model_myautoparc_client,base.group_system,1,1,1,1
 access_myautoparc_model_admin,myautoparc.model,model_myautoparc_model,base.group_system,1,1,1,1
 access_myautoparc_brand_admin,myautoparc.brand,model_myautoparc_brand,base.group_system,1,1,1,1
+access_myautoparc_center_admin,myautoparc.center,model_myautoparc_center,base.group_system,1,1,1,1
+access_myautoparc_affectation_admin,myautoparc.affectation,model_myautoparc_affectation,base.group_system,1,1,1,1

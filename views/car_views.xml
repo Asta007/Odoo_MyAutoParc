@@ -1,0 +1,40 @@
+<odoo>
+    <record id="view_car_list" model="ir.ui.view">
+        <field name="name">myautoparc.car.list</field>
+        <field name="model">myautoparc.car</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="immatriculation"/>
+                <field name="brand_id"/>
+                <field name="model_id"/>
+                <field name="statut"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_car_form" model="ir.ui.view">
+        <field name="name">myautoparc.car.form</field>
+        <field name="model">myautoparc.car</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="immatriculation"/>
+                        <field name="numero_chassis"/>
+                        <field name="date_acquisition"/>
+                        <field name="type_vehicule"/>
+                        <field name="statut"/>
+                        <field name="brand_id"/>
+                        <field name="model_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_car" model="ir.actions.act_window">
+        <field name="name">Cars</field>
+        <field name="res_model">myautoparc.car</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+        id="myautoparc_root_menu"
+        name="Auto Parc"
+        sequence="0"/>
+
+        <menuitem
+        id="myautoparc_sub_menu_conf"
+        name="Configuration"
+        parent="myautoparc_root_menu"
+        sequence="1"/>
+
+        <menuitem
+        id="myautoparc_client_menu"
+        name="Clients"
+        parent="myautoparc_sub_menu_conf"
+        action="action_myautoparc_client"
+        sequence="1"/>
+
+        <menuitem
+        id="myautoparc_model_menu"
+        name="Models"
+        parent="myautoparc_sub_menu_conf"
+        action="action_myautoparc_model"
+        sequence="2"/>
+
+        <menuitem
+        id="myautoparc_brand_menu"
+        name="Brands"
+        parent="myautoparc_sub_menu_conf"
+        action="action_myautoparc_brand"
+        sequence="3"/>
+
+        <menuitem
+        id="myautoparc_car_menu"
+        name="Cars"
+        parent="myautoparc_sub_menu_conf"
+        action="action_myautoparc_car"
+        sequence="4"/>
+
+        <!-- ============== SETTING ==================== -->
+
+        <menuitem
+        id="myautoparc_sub_menu_sett"
+        name="Settings"
+        parent="myautoparc_root_menu"
+        sequence="2"/>
+
+        <menuitem
+        id="myautoparc_assurance_menu"
+        name="Assurance"
+        parent="myautoparc_sub_menu_sett"
+        action="action_myautoparc_assurance"
+        sequence="1"/>
+
+        <menuitem
+        id="myautoparc_contract_menu"
+        name="Contract"
+        parent="myautoparc_sub_menu_sett"
+        action="action_myautoparc_contract"
+        sequence="2"/>
+
+        <menuitem
+        id="myautoparc_graycard_menu"
+        name="graycard"
+        parent="myautoparc_sub_menu_sett"
+        action="action_myautoparc_graycard"
+        sequence="4"/>
+
+        <menuitem
+        id="myautoparc_maintenance_menu"
+        name="maintenance"
+        parent="myautoparc_sub_menu_sett"
+        action="action_myautoparc_maintenance"
+        sequence="5"/>
+
+        <menuitem
+        id="myautoparc_employe_menu"
+        name="Employe"
+        parent="myautoparc_sub_menu_sett"
+        sequence="5"
+        action="action_myautoparc_employe"/>
+
+    </data>
+</odoo>

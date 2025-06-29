@@ -1,0 +1,37 @@
+<odoo>
+    <record id="view_center_list" model="ir.ui.view">
+        <field name="name">myautoparc.center.list</field>
+        <field name="model">myautoparc.center</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="adresse"/>
+                <field name="responsable"/>
+                <field name="telephone"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_center_form" model="ir.ui.view">
+        <field name="name">myautoparc.center.form</field>
+        <field name="model">myautoparc.center</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="adresse"/>
+                        <field name="responsable"/>
+                        <field name="telephone"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_center" model="ir.actions.act_window">
+        <field name="name">Centers</field>
+        <field name="res_model">myautoparc.center</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

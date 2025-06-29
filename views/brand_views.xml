@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_brand_list" model="ir.ui.view">
+        <field name="name">myautoparc.brand.list</field>
+        <field name="model">myautoparc.brand</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_brand_form" model="ir.ui.view">
+        <field name="name">myautoparc.brand.form</field>
+        <field name="model">myautoparc.brand</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_brand" model="ir.actions.act_window">
+        <field name="name">Brands</field>
+        <field name="res_model">myautoparc.brand</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
